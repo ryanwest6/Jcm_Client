@@ -1,0 +1,40 @@
+//example jcm command script
+//.o PRINTSCRIPT ON
+
+echo ###This script demonstates basic capabilities of the jcm server###
+
+echo ###These values should remain constant###
+read crc
+read crc
+read crc
+
+echo ###Reading status###
+read status
+
+echo ###Now configuring device###
+configure
+
+echo ###Now performing readback###
+readback
+
+echo ###Reading status again###
+read status
+
+echo ###Reading cor1 register###
+read cor1
+echo ###Writing cor1 register with value 0x0000000a  ###
+write cor1 a
+echo ###Rereading cor1 register###
+read cor1
+
+echo ###Reading 3 frames at 0x0000000a and bscan 1###
+read bscan 1 3
+read frame 00000000 -n 3
+
+echo ###Reading XADC info###
+read xadc
+
+echo ###These values should now be changing###
+read crc
+read crc
+read crc
