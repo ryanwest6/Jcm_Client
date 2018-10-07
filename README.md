@@ -1,4 +1,4 @@
-#Jcm_Client
+# Jcm_Client
 
 The JCM (Jtag Configuration Manager) is an embedded system running Arch Linux. It is used in the Configurable Computing Lab at BYU, and its purpose is to monitor the response that FPGA devices have when exposed to radiation. The JCM can also emulate the behavior of radiation and inject faults into the FPGA configuration memory, providing a safe, efficient way to do radation tests.
 
