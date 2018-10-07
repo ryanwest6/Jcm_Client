@@ -1,1 +1,1 @@
-A Python API that connects to the JCM server to perform fault injection and testing on FPGA devices.
+This is a Python API that connects to the JCM server to perform fault injection and testing on FPGA devices. Note that this API is deprecated, as it was used to connect to the C/C++ version of the server. I wrote an updated server completely in Python that is now included in the JCM image.
